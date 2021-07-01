@@ -1,10 +1,26 @@
 import React from 'react';
 import {hot} from "react-hot-loader";
-class App extends React.Component{
+import Login from "./Component/Login";
+import HomePage from "./Component/HomePage.jsx";
 
+const AppStyle = {
+    backgroundColor:"red",
+    padding:"20px 10px 20px 10px"
+}
+class App extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            isLoggedIn : true,
+
+        }
+    }
     render(){
+        const isLoggedIn = this.state.isLoggedIn;
         return(
-            <div>Ram ji ki jay
+            <div style={AppStyle}>
+                {!isLoggedIn &&<Login/>}
+                {isLoggedIn &&<HomePage/>}
             </div>
         )
     }
