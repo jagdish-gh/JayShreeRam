@@ -12,7 +12,7 @@ class MiddleBar extends React.Component{
 
     render(){
         return(
-           <div style={middlebar}></div>
+           <div style={middlebar}>ram</div>
         )
     }
 }
