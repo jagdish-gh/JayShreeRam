@@ -4,7 +4,7 @@ import Login from "./Component/Login";
 import HomePage from "./Component/HomePage.jsx";
 
 const AppStyle = {
-    backgroundColor:"red",
+    // backgroundColor:"red",
     padding:"20px 10px 20px 10px"
 }
 class App extends React.Component{
